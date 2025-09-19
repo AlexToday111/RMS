@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16:///rms
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: false
+app:
+  jwt:
+    secret: test-secret-test-secret-test-secret-123456
+    expiration-seconds: 3600
+
